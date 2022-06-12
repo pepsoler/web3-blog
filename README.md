@@ -1,15 +1,8 @@
-# Basic Sample Hardhat Project
+# Blogging in Block
+This is a project based on Nader Dabit tutorial about full stack web3 development:
+https://dev.to/edge-and-node/the-complete-guide-to-full-stack-web3-development-4g74
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+In this project I am doing my personal implementation adding some additional features.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
+## Command line
 npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```

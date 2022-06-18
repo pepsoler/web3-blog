@@ -4,6 +4,4 @@ https://dev.to/edge-and-node/the-complete-guide-to-full-stack-web3-development-4
 
 In this project I am doing my personal implementation adding some additional features.
 
-## Command line
-npx hardhat node
  

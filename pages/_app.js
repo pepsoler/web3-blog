@@ -93,9 +93,9 @@ function MyApp({ Component, pageProps }) {
           }
         </div>
       </nav>
-      <div className={container}>
-        <AccountContext.Provider value={account}>
-          <Component {...pageProps} connect={connect} />
+      <div className={container}> last container
+        <AccountContext.Provider value={account}> account context provider
+          <Component {...pageProps} connect={connect} /> Component
         </AccountContext.Provider>
       </div>
     </div>

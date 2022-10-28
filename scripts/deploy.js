@@ -1,4 +1,3 @@
-/* scripts/deploy.js */
 const hre = require("hardhat");
 const fs = require('fs');
 
@@ -9,7 +8,7 @@ async function main() {
 
   await blog.deployed();
   console.log("Blog deployed to:", blog.address);
-
+  
   /* this code writes the contract addresses to a local */
   /* file named config.js that we can use in the app */
   fs.writeFileSync('./config.js', `

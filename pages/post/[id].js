@@ -1,4 +1,3 @@
-/* pages/post/[id].js */
 import ReactMarkdown from 'react-markdown'
 import { useContext } from 'react'
 import { useRouter } from 'next/router'

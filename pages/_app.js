@@ -1,4 +1,3 @@
-/* pages/__app.js */
 import '../styles/globals.css'
 import { useState } from 'react'
 import Link from 'next/link'
@@ -16,12 +15,13 @@ function MyApp({ Component, pageProps }) {
   /* web3Modal configuration for enabling wallet access */
   async function getWeb3Modal() {
     const web3Modal = new Web3Modal({
+      network: 'mainnet',
       cacheProvider: false,
       providerOptions: {
         walletconnect: {
           package: WalletConnectProvider,
           options: { 
-            infuraId: "your-infura-id"
+            infuraId: process.env.NEXT_PUBLIC_INFURA_ID
           },
         },
       },

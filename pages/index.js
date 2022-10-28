@@ -1,4 +1,3 @@
-/* pages/index.js */
 import { css } from '@emotion/css'
 import { useContext } from 'react'
 import { useRouter } from 'next/router'

@@ -1,4 +1,3 @@
-// contracts/Blog.sol
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
@@ -24,7 +23,7 @@ contract Blog {
     mapping(string => Post) private hashToPost;
 
     /* events facilitate communication between smart contractsand their user interfaces  */
-    /* i.e. we can create listeners for events in the client and also use them in The Graph  */
+    /* i.e. we can create listeners for events in the client and use them in The Graph  */
     event PostCreated(uint id, string title, string hash);
     event PostUpdated(uint id, string title, string hash, bool published);
 
@@ -36,12 +35,10 @@ contract Blog {
         owner = msg.sender;
     }
 
-    /* updates the blog name */
     function updateName(string memory _name) public {
         name = _name;
     }
 
-    /* transfers ownership of the contract to another address */
     function transferOwnership(address newOwner) public onlyOwner {
         owner = newOwner;
     }
@@ -74,7 +71,7 @@ contract Blog {
         hashToPost[hash] = post;
         emit PostUpdated(post.id, title, hash, published);
     }
-    
+
     /* fetches all posts */
     function fetchPosts() public view returns (Post[] memory) {
         uint itemCount = _postIds.current();
